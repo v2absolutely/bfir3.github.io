@@ -9,17 +9,37 @@
 		"codename": "es_mercenary",
 		"health":"125",
         "passives":[
-          {
+         {
             "name":"Paced Strikes",
             "description":"Hitting 3 enemies in one swing grants 10% increased attack speed for 6 seconds.",
+			"modifiers": [
+				{
+				  "name":"Attack Speed",
+				  "value":"0.10",
+				  "duration":"6",
+				  "condition":"Hit 3 enemies in one swing"
+				}
+			]
           },
-          {
+           {
             "name":"Hitting the Sweet Spot",
             "description":"Attacks cleave through more enemies.",
+			"modifiers": [
+				{
+				  "name":"Cleave",
+				  "value":"unknown"
+				}
+			]
           },
           {
             "name":"No More Laughin' Now!",
-            "description":"Increased crit chance.",
+            "description":"Increases crit chance by 5%.",
+			"modifiers": [
+				{
+				  "name":"Critical Chance",
+				  "value":"0.05"
+				}
+			]
           }
         ],
         "skill":{
