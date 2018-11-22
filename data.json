@@ -9,7 +9,7 @@
 		"codename": "es_mercenary",
 		"health":"125",
         "passives":[
-         {
+          {
             "name":"Paced Strikes",
             "description":"Hitting 3 enemies in one swing grants 10% increased attack speed for 6 seconds.",
 			"modifiers": [
@@ -21,7 +21,7 @@
 				}
 			]
           },
-           {
+          {
             "name":"Hitting the Sweet Spot",
             "description":"Attacks cleave through more enemies.",
 			"modifiers": [
@@ -33,7 +33,7 @@
           },
           {
             "name":"No More Laughin' Now!",
-            "description":"Increases crit chance by 5%.",
+            "description":"Increased crit chance.",
 			"modifiers": [
 				{
 				  "name":"Critical Chance",
@@ -44,8 +44,8 @@
         ],
         "skill":{
           "name":"Morale Boost",
-          "description":"Markus grants nearby allies 25 temporary health and staggers nearby enemies.",
-		  "cooldown":"90",
+          "description":"Markus grants nearby party members a boost of temporary health and staggers nearby enemies.",
+		  "cooldown":"180",
 		  "radius": ""
         },
         "talents":[
@@ -53,66 +53,156 @@
             {
               "name":"Ready for Action",
               "description":"Increases stamina regeneration by 30%.",
+			  "modifiers": [
+				  {
+					"name":"Stamina regeneration",
+					"value":"30%"
+				  }
+			  ]
             },
             {
               "name":"And Stay Down!",
               "description":"Increases critical hit chance by 5%.",
+			  "modifiers": [
+				  {
+				    "name":"Critical Chance",
+				    "value":"5%"
+				  }
+			  ]
             },
             {
               "name":"Battle Scars",
               "description":"Increases healing effects by 30%.",
+			  "modifiers": [
+				  {
+				    "name":"Healing Effects",
+				    "value":"30%"
+				  }
+			  ]
             }
           ],
           [
             {
               "name":"The More The Merrier!",
               "description":"Increases Power by 3% for every nearby enemy and stacks up to 5 times.",
+			  "modifiers": [
+				  {
+				    "name":"Power",
+				    "value":"3%",
+					"stacks":"5",
+				    "condition":"Every nearby enemy"
+				  }
+			  ]
             },
             {
               "name":"Desperate Defiance",
               "description":"Reduces damage taken by 35% when below 50% health.",
+			  "modifiers": [
+				  {
+				    "name":"Damage Taken Reduction",
+				    "value":"25%",
+				    "condition":"Under 50% health"
+				  }
+			  ]
             },
             {
               "name":"Shrug it Off",
               "description":"Reduces the attack interruption time when taking damage by 35%.",
+			  "modifiers": [
+				  {
+				    "name":"Attack Interruption Reduction",
+				    "value":"35%"
+				  }
+			  ]
             }
           ],
           [
             {
               "name":"Reikland Reaper",
               "description":"Increases Power by 15% when Paced Strikes is active.",
+			  "modifiers": [
+				  {
+				    "name":"Power",
+				    "value":"10%",
+				    "condition":"On passive"
+				  }
+			  ]
             },
             {
               "name":"Blade Barrier",
               "description":"Reduces damage taken by 25% when Paced Strikes is active.",
+			  "modifiers": [
+				  {
+				    "name":"Damage Taken Reduction",
+				    "value":"25%",
+				    "condition":"On passive"
+				  }
+			  ]
             },
             {
               "name":"Strike Together",
               "description":"Paced Strikes spreads to nearby allies.",
+			  "modifiers": [
+				  {
+				    "name":"Passive Share",
+					"duration":"6",
+				    "condition":"Hit 3 enemies in one swing"
+				  }
+			  ]
             }
           ],
           [
             {
-              "name":"Drillmaster",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies.",
+              "name":"For the Empire!",
+              "description":"Critical hits grant temporary health.",
+			  "modifiers": [
+				  {
+				    "name":"Temporary Health",
+				    "condition":"Critical hits"
+				  }
+			  ]
             },
             {
-              "name":"Mercenary's Pride",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain.",
+              "name":"Soldier's Spirit",
+              "description":"Kills grant temporary health.",
+			  "modifiers": [
+				  {
+				    "name":"Temporary Health",
+				    "condition":"Kills"
+				  }
+			  ]
             },
             {
-              "name":"Captain's Command",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds.",
+              "name":"The Harder They Fall",
+              "description":"When bosses die, gain health.",
+			  "modifiers": [
+				  {
+				    "name":"Health Gain",
+				    "condition":"Bosses die"
+				  }
+			  ]
             }
           ],
           [
             {
               "name":"Gabbler",
               "description":"Reduces the cooldown of Morale Boost by 30%.",
+			  "modifiers": [
+				  {
+				    "name":"Cooldown Reduction",
+				    "value":"30%"
+				  }
+			  ]
             },
             {
               "name":"Inspirational",
-              "description":"Increases the temporary health gained from Morale Boost to 45.",
+              "description":"Increases the temporary health gained from Morale Boost.",
+			  "modifiers": [
+				  {
+				    "name":"Health Gain",
+				    "condition":"Bosses die"
+				  }
+			  ]
             },
             {
               "name":"On Yer Feet, Mates!",
