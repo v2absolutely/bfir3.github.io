@@ -897,9 +897,9 @@ function loadMyBuilds() {
 
 function initFirestore() {
 	firebase.initializeApp({
-	  apiKey: "AIzaSyDtUozP43e9ygkqV0HpKYRFznePouI2zg0",
-	  authDomain: "verminbuilds.firebaseapp.com",
-	  projectId: "verminbuilds"
+	  apiKey: "AIzaSyDxsvtG3o7nwAtiOP8z6J3NNHF2svdj5OM",
+	  authDomain: "v2verminbuilds.firebaseapp.com",
+	  projectId: "v2verminbuilds"
 	});
 
 	// Initialize Cloud Firestore through Firebase
