@@ -33,7 +33,7 @@
           },
           {
             "name":"No More Laughin' Now!",
-            "description":"Increased crit chance.",
+            "description":"Increases crit chance by 5%.",
 			"modifiers": [
 				{
 				  "name":"Critical Chance",
@@ -45,7 +45,7 @@
         "skill":{
           "name":"Morale Boost",
           "description":"Markus grants nearby party members a boost of temporary health and staggers nearby enemies.",
-		  "cooldown":"180",
+		  "cooldown":"90",
 		  "radius": ""
         },
         "talents":[
@@ -153,8 +153,8 @@
           ],
           [
             {
-              "name":"For the Empire!",
-              "description":"Critical hits grant temporary health.",
+              "name":"Drillmaster",
+              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies.",
 			  "modifiers": [
 				  {
 				    "name":"Temporary Health",
@@ -163,8 +163,8 @@
 			  ]
             },
             {
-              "name":"Soldier's Spirit",
-              "description":"Kills grant temporary health.",
+              "name":"Mercenary's Pride",
+              "description":"Melee killing blows grant temporary health based off the health of the enemy slain.",
 			  "modifiers": [
 				  {
 				    "name":"Temporary Health",
@@ -173,8 +173,8 @@
 			  ]
             },
             {
-              "name":"The Harder They Fall",
-              "description":"When bosses die, gain health.",
+              "name":"Captain's Command",
+              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds.",
 			  "modifiers": [
 				  {
 				    "name":"Health Gain",
@@ -196,7 +196,7 @@
             },
             {
               "name":"Inspirational",
-              "description":"Increases the temporary health gained from Morale Boost.",
+              "description":"Increases the temporary health gained from Morale Boost to 45.",
 			  "modifiers": [
 				  {
 				    "name":"Health Gain",
