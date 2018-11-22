@@ -2159,7 +2159,7 @@
 	"melee_traits": [
 		{
 			"name":"Heroic Intervention",
-			"description":"Assisting an ally under attack grants both players a damage shield for a short time"
+			"description":"Assisting an ally under attack restores 15 temporary health for both players"
 		},
 		{
 			"name":"Off Balance",
@@ -2175,17 +2175,17 @@
 		},
 		{
 			"name":"Resourceful Combatant",
-			"description":"Melee critical strikes reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds."
+			"description":"Melee critical strikes reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds"
 		},
 		{
 			"name":"Swift Slaying",
-			"description":"Critical melee strikes increase attack speed by 20% for 5 seconds​"
+			"description":"Critical melee strikes increase attack speed by 20% for 5 seconds"
 		}
 	],
 	"range_traits": [
 		{
 			"name":"Barrage",
-			"description":"Consecutive attacks against the same targets boosts attack power by 5% for 5 seconds"
+			"description":"Consecutive attacks against the same target boosts attack power by 5% for 5 seconds"
 		},
 		{
 			"name":"Conservative Shooter",
@@ -2193,7 +2193,7 @@
 		},
 		{
 			"name":"Heat Sink",
-			"description":"Critical hits refund the overcharge cost of the attack.",
+			"description":"Critical hits refund the overcharge cost of the attack",
 			"heat":"yes"
 		},
 		{
@@ -2206,29 +2206,29 @@
 		},
 		{
 			"name":"Resourceful Sharpshooter",
-			"description":"Ranged critical hits reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds."
+			"description":"Ranged critical hits reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds"
 		},
 		{
 			"name":"Scrounger",
-			"description":"Critical hits restore 5% of maximum ammo. Triggers once per shot."
+			"description":"Critical hits restore 5% of maximum ammo. Triggers once per shot"
 		},
 		{
 			"name":"Thermal Equalizer",
-			"description":"Weapon generates 20% less heat​",
+			"description":"Weapon generates 20% less heat",
 			"heat":"yes"
 		}
 	],
 	"necklace_traits": [
 		{
 			"name":"Barkskin",
-			"description":"Taking damage reduces the damage you take from subsequent hits by 40% for 2 seconds. Triggers once every 2 seconds."
+			"description":"Taking damage reduces the damage you take from subsequent hits by 40% for 2 seconds. Triggers once every 2 seconds"
 		},
 		{
 			"name":"Hand of Shallya",
 			"description":"Healing an ally with a medpack also heals you for 50% of your missing health"
 		},
 		{
-			"name":"Healers Touch",
+			"name":"Healer's Touch",
 			"description":"25% chance to not consume healing item on use"
 		},
 		{
@@ -2237,7 +2237,7 @@
 		},
 		{
 			"name":"Shallya's Boon",
-			"description":"Increases effect of healing on you by 30%​"
+			"description":"Increases effect of healing on you by 30%"
 		}
 	],
 	"charm_traits": [
@@ -2255,7 +2255,7 @@
 		},
 		{
 			"name":"Proxy",
-			"description":"Consuming a potion spread the effect to the nearest ally​"
+			"description":"Consuming a potion spread the effect to the nearest ally"
 		}
 	],
 	"trinket_traits": [
@@ -2269,7 +2269,7 @@
 		},
 		{
 			"name":"Shrapnel",
-			"description":"Grenades cause hit enemies to take 20% increased damage for 10 seconds​"
+			"description":"Grenades cause hit enemies to take 20% increased damage for 10 seconds"
 		}
 	]
   }
