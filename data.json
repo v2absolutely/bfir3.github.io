@@ -428,6 +428,10 @@
           {
             "name":"Fast Hands",
             "description":"Increased reload speed by 15%"
+          },
+	  {
+            "name":"Ingenious Improvisation",
+            "description":"Using health items, potions, or grenades has a 10% chance not to consume the item."
           }
         ],
         "skill":{
