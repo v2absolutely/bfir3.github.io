@@ -1494,7 +1494,7 @@
         "passives":[
           {
             "name":"Blood Magic",
-            "description":"50% damage taken transfered to Overcharge."
+            "description":"50% damage taken transferred to Overcharge."
           },
           {
             "name":"Slave to Aqshy",
@@ -1502,11 +1502,7 @@
           },
           {
             "name":"Unstable Strength",
-            "description":"Increased melee power on high Overcharge."
-          },
-          {
-            "name":"Blazing Sinews",
-            "description":"Reduced block cost on high Overcharge, consumes Overcharge."
+            "description":"Increased melee power on high Overcharge by up to 60%"
           }
         ],
         "skill":{
@@ -1546,11 +1542,11 @@
           [
             {
               "name":"Dissispate",
-              "description":"Reduces damage taken from venting overcharge by 50%."
+              "description":"Block cost is reduced by 50% when Overcharged and blocking attacks vents Overcharge"
             },
             {
               "name":"Conduit",
-              "description":"Increases rate of venting overcharge by 50%."
+              "description":"Increases rate of venting overcharge by 30% and reduces damage taken from venting by 50%."
             },
             {
               "name":"Natural Talent",
@@ -1559,16 +1555,16 @@
           ],
           [
             {
-              "name":"Seething Embers",
-              "description":"Critical hits grant temporary health."
+              "name":"Soul Quench",
+              "description":"Staggering enemies with a melee attack grants temporary health. Health gained based on stagger strength."
             },
             {
-              "name":"Soul Snare",
-              "description":"Kills grant temporary health."
+              "name":"Reckless Rampage",
+              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
             },
             {
-              "name":"Blazing Harvest",
-              "description":"When bosses die, gain health."
+              "name":"Burn-Bloom",
+              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
             }
           ],
           [
@@ -2179,7 +2175,7 @@
 		},
 		{
 			"name":"Resourceful Combatant",
-			"description":"Melee critical hits reduce the remaining cooldown of your career skill by 2%"
+			"description":"Melee critical strikes reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds."
 		},
 		{
 			"name":"Swift Slaying",
@@ -2197,7 +2193,7 @@
 		},
 		{
 			"name":"Heat Sink",
-			"description":"Reduce overheat by 4 on critical hits",
+			"description":"Critical hits refund the overcharge cost of the attack.",
 			"heat":"yes"
 		},
 		{
@@ -2210,11 +2206,11 @@
 		},
 		{
 			"name":"Resourceful Sharpshooter",
-			"description":"Ranged critical hits reduces remaining cooldown of your career skill by 2%"
+			"description":"Ranged critical hits reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds."
 		},
 		{
 			"name":"Scrounger",
-			"description":"Critical hits restore 2 ammo"
+			"description":"Critical hits restore 5% of maximum ammo. Triggers once per shot."
 		},
 		{
 			"name":"Thermal Equalizer",
@@ -2225,11 +2221,11 @@
 	"necklace_traits": [
 		{
 			"name":"Barkskin",
-			"description":"Reduces damage taken by 50% for 10 seconds after using healing supplies"
+			"description":"Taking damage reduces the damage you take from subsequent hits by 40% for 2 seconds. Triggers once every 2 seconds."
 		},
 		{
 			"name":"Hand of Shallya",
-			"description":"Healing an ally with a medpack also heals you for 35% of your missing health"
+			"description":"Healing an ally with a medpack also heals you for 50% of your missing health"
 		},
 		{
 			"name":"Healers Touch",
@@ -2237,7 +2233,7 @@
 		},
 		{
 			"name":"Natural Bond",
-			"description":"Grants passive health regeneration but can no longer heal yourself"
+			"description":"Passively regenerates 1 health every 5 seconds. Health from healing items is converted into temporary health."
 		},
 		{
 			"name":"Shallya's Boon",
