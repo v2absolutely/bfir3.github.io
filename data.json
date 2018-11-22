@@ -2163,7 +2163,7 @@
 		},
 		{
 			"name":"Off Balance",
-			"description":"Blocking an attack increases the amount of damage the attacker takes by 50% for 3 seconds"
+			"description":"Blocking an attack increases the amount of damage the attacker takes by 20% for 3 seconds"
 		},
 		{
 			"name":"Opportunist",
