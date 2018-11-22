@@ -213,7 +213,7 @@ function updateBuild() {
 		hash: getSerializedUrl(),
 		videoLink: $(".relatedVideo").val(),
 		dateModified: new Date(),
-		patch: "1.0.7"
+		patch: "1.3"
 	}, { merge: true }).then(function (ref) {
 		console.log(ref);
 	});
