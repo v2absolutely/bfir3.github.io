@@ -1606,13 +1606,19 @@
 			"class": ["Slayer"]
 		},
 		{
-			"name":"One Hand Hammer",
+			"name":"Dual Hammers",
+			"codename": "dr_dual_hammers",
+			"templateName": "dual_wield_hammers_template_2",
+			"class": ["Ranger Veteran", "Iron Breaker", "Slayer"]
+		},
+		{
+			"name":"One Handed Hammer",
 			"codename": "dr_1h_hammer",
 			"templateName": "one_handed_hammer_template_2",
 			"class": ["Ranger Veteran", "Iron Breaker", "Slayer"]
 		},
 		{
-			"name":"One Hand Axe",
+			"name":"One Handed Axe",
 			"codename": "dr_1h_axe",
 			"templateName": "one_hand_axe_template_2",
 			"class": ["Ranger Veteran", "Iron Breaker", "Slayer"]
@@ -1630,13 +1636,13 @@
 			"class": ["Ranger Veteran", "Iron Breaker"]
 		},
 		{
-			"name":"Two Hand Axe",
+			"name":"Two Handed Axe",
 			"codename": "dr_2h_axe",
 			"templateName": "two_handed_axes_template_1",
 			"class": ["Ranger Veteran", "Iron Breaker", "Slayer"]
 		},
 		{
-			"name":"Two Hand Hammer",
+			"name":"Two Handed Hammer",
 			"codename": "dr_2h_hammer",
 			"templateName": "two_handed_hammers_template_1",
 			"class": ["Ranger Veteran", "Iron Breaker", "Slayer"]
@@ -1666,6 +1672,12 @@
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
+			"name":"One Handed Axe",
+			"codename": "we_1h_axe",
+			"templateName": "one_handed_axes_template_2",
+			"class": ["Waystalker", "Shade", "Handmaiden"]
+		},
+		{
 			"name":"Glaive",
 			"codename": "we_2h_axe",
 			"templateName": "two_handed_axes_template_2",
@@ -1678,25 +1690,25 @@
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
-			"name":"Two Hand Sword",
+			"name":"Two Handed Sword",
 			"codename": "we_2h_sword",
 			"templateName": "two_handed_swords_wood_elf_template",
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
-			"name":"One Hand Sword",
+			"name":"One Handed Sword",
 			"codename": "we_1h_sword",
 			"templateName": "we_one_hand_sword_template_1",
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
-			"name":"One Hand Hammer",
+			"name":"One Handed Hammer",
 			"codename": "es_1h_hammer",
 			"templateName": "one_handed_hammer_template_1",
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
 		},
 		{
-			"name":"One Hand Sword",
+			"name":"One Handed Sword",
 			"codename": "es_1h_sword",
 			"templateName": "one_handed_swords_template_1",
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
@@ -1720,13 +1732,19 @@
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
 		},
 		{
-			"name":"Two Hand Hammer",
+			"name":"Mace and Sword",
+			"codename": "es_dw_hammer_and_sword",
+			"templateName": "placeholder_text",
+			"class": ["Mercenary", "Foot Knight", "Huntsman"]
+		},
+		{
+			"name":"Two Handed Hammer",
 			"codename": "es_2h_hammer",
 			"templateName": "two_handed_hammers_template_1",
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
 		},
 		{
-			"name":"Two Hand Sword",
+			"name":"Two Handed Sword",
 			"codename": "es_2h_sword",
 			"templateName": "two_handed_swords_template_1",
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
@@ -1744,7 +1762,7 @@
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
 		},
 		{
-			"name":"One Hand Axe",
+			"name":"One Handed Axe",
 			"codename": "wh_1h_axe",
 			"templateName": "one_hand_axe_template_1",
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
@@ -1756,13 +1774,19 @@
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
 		},
 		{
+			"name":"Axe and Falchion",
+			"codename": "wh_dw_axe_falchion",
+			"templateName": "dual_wield_axe_falchion_template_1",
+			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
+		},
+		{
 			"name":"Flail",
 			"codename": "wh_1h_flail",
 			"templateName": "one_handed_flail_template_1",
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
 		},
 		{
-			"name":"Two Hand Sword",
+			"name":"Two Handed Sword",
 			"codename": "wh_2h_sword",
 			"templateName": "two_handed_swords_template_1",
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
@@ -1780,13 +1804,19 @@
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"]
 		},
 		{
-			"name":"One Hand Sword",
+			"name":"Crowbill",
+			"codename": "bw_1h_crowbills",
+			"templateName": "one_handed_crowbills_template_1",
+			"class": ["Battle Wizard", "Pyromancer", "Unchained"]
+		},
+		{
+			"name":"One Handed Sword",
 			"codename": "bw_1h_sword",
 			"templateName": "one_handed_swords_template_1",
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"]
 		},
 		{
-			"name":"One Hand Mace",
+			"name":"One Handed Mace",
 			"codename": "bw_1h_hammer",
 			"templateName": "one_handed_hammer_wizard_template_1",
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"]
