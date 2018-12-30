@@ -149,7 +149,7 @@ select {
 }
 
 input {
-    /* width: 100%; */
+    width: auto;
     height: 33px;
     padding: 0;
     /* margin: 4px 0; */
