@@ -27,6 +27,7 @@ let breakpoints =
 	};
 
 const DB_NAME = "verminBuildSets";
+let buildHash = "";
 
 function getAnonymousId() {	
 	if (!anonymousId) {
@@ -247,6 +248,22 @@ function updatePageViews(buildSetId, buildId) {
 	}
 }
 
+function copyBuild() {
+	if (buildHash === "" ) {
+		return 
+	}
+
+	var dummy = document.createElement("input");
+  document.body.appendChild(dummy);
+  dummy.setAttribute("id", "dummy_id");
+  document.getElementById("dummy_id").value=buildHash;
+  dummy.select();
+  document.execCommand("copy");
+  document.body.removeChild(dummy);
+	
+	alert("Build copied to clipboard")
+}
+
 function loadBuild() {
 	let hash = window.location.hash.substring(1);
 	if (!hash || hash.length == 0) {	
@@ -274,6 +291,8 @@ function loadBuild() {
 				return;
 			}
 			
+			buildHash = doc.data().hash;
+
 			let authorEmail = doc.data().authorEmail;
 			
 			if (getCurrentUser() && getCurrentUser().email == authorEmail) {
@@ -1284,6 +1303,7 @@ function resetCreateBuildPage() {
 }
 
 function loadPageFromHash() {
+	buildHash = ""
 	let hash = window.location.hash;
 	$("body").removeClass();
 	
