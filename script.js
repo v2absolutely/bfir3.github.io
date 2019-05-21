@@ -27,6 +27,7 @@ let breakpoints =
 	};
 
 const DB_NAME = "verminBuildSets";
+let buildHash = "";
 
 function getAnonymousId() {	
 	if (!anonymousId) {
@@ -247,6 +248,58 @@ function updatePageViews(buildSetId, buildId) {
 	}
 }
 
+function parseWeapon(weapon) {
+	var wep = ""
+	for (var ndx = 0; ndx < weapon.length; ndx++) {
+		if (weapon[ndx].startsWith("id") || weapon[ndx].startsWith("p") || weapon[ndx].startsWith("t")) {
+			console.log(weapon[ndx])
+			wep +=  weapon[ndx].split(":")[1] + ","
+		}	
+	}
+
+	return wep.substring(0, wep.length - 1)
+}
+
+function weaponProperties(propertyName) {
+	let property1Text = $(`.${propertyName}Property1Selection`)[0].options[$(`.${propertyName}Property1Selection`)[0].selectedIndex].text
+	let property2Text = $(`.${propertyName}Property2Selection`)[0].options[$(`.${propertyName}Property2Selection`)[0].selectedIndex].text
+	let meleeTrait = $(".meleeTraitSelection")[0].options[$(".meleeTraitSelection")[0].selectedIndex].text
+
+	return property1Text + "," + property2Text + "," + meleeTrait
+}
+
+function copyBuild() {
+	if (buildHash === "" ) {
+		return 
+	}
+
+	var returnHash = ""
+	var splitBuild = buildHash.split("&")
+	var hero = splitBuild[0].split("=")[1]
+	var weapon = splitBuild[1].split("=")[1].split(";")
+	returnHash += parseWeapon(weapon)
+	let heroCareer = _data.heroes[parseInt(hero[0], 10)].careers[parseInt(hero[1],10)];		
+	let meleeWeapons = _data.melee_weapons.filter(function (item) { return item.class.includes(heroCareer.name); })
+	let rangeWeapons = parseInt(hero[0], 10) == 1 && parseInt(hero[1],10) == 2 ? _data.melee_weapons.filter(function (item) { return item.class.includes(heroCareer.name); }) : _data.range_weapons.filter(function (item) { return item.class.includes(heroCareer.name); })
+	var rWeapon = splitBuild[2].split("=")[1].split(";")
+	
+	returnHash = heroCareer["codename"] + ";"
+	returnHash += meleeWeapons[parseInt(weapon[0].split(":")[1],10)].codename + ","
+	returnHash += weaponProperties("melee") + ";"
+	returnHash += rangeWeapons[parseInt(rWeapon[0].split(":")[1],10)].name + ","
+	
+
+	var dummy = document.createElement("input");
+  document.body.appendChild(dummy);
+  dummy.setAttribute("id", "dummy_id");
+  document.getElementById("dummy_id").value=buildHash;
+  dummy.select();
+  document.execCommand("copy");
+  document.body.removeChild(dummy);
+	
+	alert("Build copied to clipboard")
+}
+
 function loadBuild() {
 	let hash = window.location.hash.substring(1);
 	if (!hash || hash.length == 0) {	
@@ -274,6 +327,8 @@ function loadBuild() {
 				return;
 			}
 			
+			buildHash = doc.data().hash;
+
 			let authorEmail = doc.data().authorEmail;
 			
 			if (getCurrentUser() && getCurrentUser().email == authorEmail) {
@@ -1284,6 +1339,7 @@ function resetCreateBuildPage() {
 }
 
 function loadPageFromHash() {
+	buildHash = ""
 	let hash = window.location.hash;
 	$("body").removeClass();
 	
