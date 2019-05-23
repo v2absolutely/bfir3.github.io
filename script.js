@@ -248,15 +248,60 @@ function updatePageViews(buildSetId, buildId) {
 	}
 }
 
+function parseWeapon(weapon) {
+	var wep = ""
+	for (var ndx = 0; ndx < weapon.length; ndx++) {
+		if (weapon[ndx].startsWith("id") || weapon[ndx].startsWith("p") || weapon[ndx].startsWith("t")) {
+			console.log(weapon[ndx])
+			wep +=  weapon[ndx].split(":")[1] + ","
+		}	
+	}
+
+	return wep.substring(0, wep.length - 1)
+}
+
+function itemProperties(propertyName, propertySource, traitSource, selection) {
+	let property1Text = $(`.${propertyName}Property1Selection`)[0].options[$(`.${propertyName}Property1Selection`)[0].selectedIndex].text
+	let prop1Codename = propertySource.filter(function (item) { return item.name.includes(property1Text); })[0].codename
+	let property2Text = $(`.${propertyName}Property2Selection`)[0].options[$(`.${propertyName}Property2Selection`)[0].selectedIndex].text
+	let prop2Codename = propertySource.filter(function (item) { return item.name.includes(property2Text); })[0].codename
+	let traitName = $(selection)[0].options[$(selection)[0].selectedIndex].text
+	let traitCodename = traitSource.filter(function (item) { return item.name.includes(traitName); })[0].codename
+
+	return prop1Codename + "," + prop2Codename + "," + traitCodename
+}
+
 function copyBuild() {
 	if (buildHash === "" ) {
 		return 
 	}
 
+	var returnHash = ""
+	var splitBuild = buildHash.split("&")
+	var hero = splitBuild[0].split("=")[1]
+	var weapon = splitBuild[1].split("=")[1].split(";")
+	returnHash += parseWeapon(weapon)
+	let heroCareer = _data.heroes[parseInt(hero[0], 10)].careers[parseInt(hero[1],10)];		
+	let meleeWeapons = _data.melee_weapons.filter(function (item) { return item.class.includes(heroCareer.name); })
+	let rangeWeapons = parseInt(hero[0], 10) == 1 && parseInt(hero[1],10) == 2 ? _data.melee_weapons.filter(function (item) { return item.class.includes(heroCareer.name); }) : _data.range_weapons.filter(function (item) { return item.class.includes(heroCareer.name); })
+	var rWeapon = splitBuild[2].split("=")[1].split(";")
+	
+	// Decoding the build
+	returnHash = heroCareer["codename"] + ";"
+	returnHash += splitBuild[6].split("=")[1].split("").join(",") +";"
+	returnHash += meleeWeapons[parseInt(weapon[0].split(":")[1],10)].codename + ","
+	returnHash += itemProperties("melee", _data.melee_properties,_data.melee_traits,".meleeTraitSelection") + ";"
+	returnHash += rangeWeapons[parseInt(rWeapon[0].split(":")[1],10)].codename + ","
+	returnHash += itemProperties("range", _data.range_properties,_data.range_traits,".rangeTraitSelection") + ";"
+	returnHash += itemProperties("necklace", _data.necklace_properties,_data.necklace_traits,".necklaceTraitSelection") + ";"
+	returnHash += itemProperties("charm", _data.charm_properties,_data.charm_traits,".charmTraitSelection") + ";"
+	returnHash += itemProperties("trinket", _data.trinket_properties,_data.trinket_traits,".trinketTraitSelection") + ";"
+	
+	// To copy need to put on screen and then remove
 	var dummy = document.createElement("input");
   document.body.appendChild(dummy);
   dummy.setAttribute("id", "dummy_id");
-  document.getElementById("dummy_id").value=buildHash;
+  document.getElementById("dummy_id").value=returnHash;
   dummy.select();
   document.execCommand("copy");
   document.body.removeChild(dummy);

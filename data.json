@@ -1824,174 +1824,206 @@
 	],
 	"range_weapons": [
 		{
-			"name":"Handgun",
+      "name":"Handgun",
+      "codename":"dr_handgun",
 			"class": ["Ranger Veteran", "Iron Breaker"]
 		},
 		{
-			"name":"Crossbow",
+      "name":"Crossbow",
+      "codename":"dr_crossbow",
 			"class": ["Ranger Veteran", "Iron Breaker"]
 		},
 		{
-			"name":"Grudgeraker",
+      "name":"Grudgeraker",
+      "codename":"dr_rakegun",
 			"class": ["Ranger Veteran", "Iron Breaker"]
 		},
 		{
-			"name":"Drakefire Pistols",
+      "name":"Drakefire Pistols",
+      "codename":"dr_drake_pistol",
 			"class": ["Iron Breaker"],
 			"heat":"yes"
 		},
 		{
-			"name":"Drakegun",
+      "name":"Drakegun",
+      "codename":"dr_drakegun",
 			"class": ["Iron Breaker"],
 			"heat":"yes"
 		},
 		{
-			"name":"Dual Axes",
+      "name":"Dual Axes",
+      "codename":"dr_dual_wield_axes",
 			"class": ["Slayer"]
 		},
 		{
-			"name":"One Hand Hammer",
+      "name":"One Hand Hammer",
+      "codename":"dr_1h_hammer",
 			"class": ["Slayer"]
 		},
 		{
-			"name":"One Hand Axe",
+      "name":"One Hand Axe",
+      "codename":"dr_1h_axe",
 			"class": ["Slayer"]
 		},
 		{
-			"name":"Two Hand Axe",
+      "name":"Two Hand Axe",
+      "codename":"dr_2h_axe",
 			"class": ["Slayer"]
 		},
 		{
-			"name":"Two Hand Hammer",
+      "name":"Two Hand Hammer",
+      "codename":"dr_2h_hammer",
 			"class": ["Slayer"]
 		},
 		{
-			"name":"Pickaxe",
+      "name":"Pickaxe",
+      "codename":"dr_2h_pick",
 			"class": ["Slayer"]
 		},
 		{
-			"name":"Swiftbow",
+      "name":"Swiftbow",
+      "codename":"we_shortbow",
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
-			"name":"Longbow",
+      "name":"Longbow",
+      "codename":"we_longbow",
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
-			"name":"Hagbane Swiftbow",
+      "name":"Hagbane Swiftbow",
+      "codename":"we_shortbow_hagbane",
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
-			"name":"Volley Crossbow",
+      "name":"Volley Crossbow",
+      "codename":"we_crossbow_repeater",
 			"class": ["Waystalker", "Shade", "Handmaiden"]
 		},
 		{
-			"name":"Longbow",
+      "name":"Longbow",
+      "codename":"es_longbow",
 			"class": ["Huntsman"]
 		},
 		{
-			"name":"Handgun",
+      "name":"Handgun",
+      "codename":"es_handgun",
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
 		},
 		{
-			"name":"Repeater Handgun",
+      "name":"Repeater Handgun",
+      "codename":"es_repeating_handgun",
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
 		},
 		{
-			"name":"Blunderbuss",
+      "name":"Blunderbuss",
+      "codename":"es_blunderbuss",
 			"class": ["Mercenary", "Foot Knight", "Huntsman"]
 		},
 		{
-			"name":"Crossbow",
+      "name":"Crossbow",
+      "codename":"wh_crossbow",
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
 		},
 		{
-			"name":"Volley Crossbow",
+      "name":"Volley Crossbow",
+      "codename":"wh_crossbow_repeater",
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
 		},
 		{
-			"name":"Repeater Pistol",
+      "name":"Repeater Pistol",
+      "codename":"wh_repeating_pistols",
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
 		},
 		{
-			"name":"Brace of Pistols",
+      "name":"Brace of Pistols",
+      "codename":"wh_brace_of_pistols",
 			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
 		},
 		{
-			"name":"Crossbow",
-			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
-		},
-		{
-			"name":"Bolt Staff",
+      "name":"Bolt Staff",
+      "codename":"bw_skullstaff_spear",
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"],
 			"heat":"yes"
 		},
 		{
-			"name":"Beam Staff",
+      "name":"Beam Staff",
+      "codename":"bw_skullstaff_beam",
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"],
 			"heat":"yes"
 		},
 		{
-			"name":"Fireball Staff",
+      "name":"Fireball Staff",
+      "codename":"bw_skullstaff_fireball",
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"],
 			"heat":"yes"
 		},
 		{
-			"name":"Conflagration Staff",
+      "name":"Conflagration Staff",
+      "codename":"bw_skullstaff_geiser",
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"],
 			"heat":"yes"
 		},
 		{
-			"name":"Flamestorm Staff",
+      "name":"Flamestorm Staff",
+      "codename":"bw_skullstaff_flamethrower",
 			"class": ["Battle Wizard", "Pyromancer", "Unchained"],
 			"heat":"yes"
 		}
 	],
 	"melee_properties": [
 		{
-			"name":"Attack Speed",
+      "name":"Attack Speed",
+      "codename":"attack_speed",
 			"min_value":"3",
 			"max_value":"5",
 			"step":"0.2"
 		},
 		{
-			"name":"Stamina",
+      "name":"Stamina",
+      "codename":"stamina",
 			"min_value":"1",
 			"max_value":"2",
 			"step":"1"
 		},
 		{
-			"name":"Block Cost Reduction",
+      "name":"Block Cost Reduction",
+      "codename":"block_cost",
 			"min_value":"10",
 			"max_value":"30",
 			"step":"2"
 		},
 		{
-			"name":"Crit Chance",
+      "name":"Crit Chance",
+      "codename":"crit_chance",
 			"min_value":"3",
 			"max_value":"5",
 			"step":"0.2"
 		},
 		{
-			"name":"Crit Power",
+      "name":"Crit Power",
+      "codename":"crit_boost",
 			"min_value":"10",
 			"max_value":"20",
 			"step":"1"
 		},
 		{
-			"name":"Push/Block Angle",
+      "name":"Push/Block Angle",
+      "codename":"push_block_arc",
 			"min_value":"10",
 			"max_value":"30",
 			"step":"2"
 		},
 		{
-			"name":"Power vs Skaven",
+      "name":"Power vs Skaven",
+      "codename":"power_vs_skaven",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Chaos",
+      "name":"Power vs Chaos",
+      "codename":"power_vs_chaos",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
@@ -1999,49 +2031,57 @@
 	],
 	"range_properties": [
 		{
-			"name":"Crit Chance",
+      "name":"Crit Chance",
+      "codename":"crit_chance",
 			"min_value":"3",
 			"max_value":"5",
 			"step":"0.2"
 		},
 		{
-			"name":"Crit Power",
+      "name":"Crit Power",
+      "codename":"crit_boost",
 			"min_value":"10",
 			"max_value":"20",
 			"step":"1"
 		},
 		{
-			"name":"Power vs Skaven",
+      "name":"Power vs Skaven",
+      "codename":"power_vs_skaven",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Chaos",
+      "name":"Power vs Chaos",
+      "codename":"power_vs_chaos",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Infantry",
+      "name":"Power vs Infantry",
+      "codename":"power_vs_unarmoured",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Armored",
+      "name":"Power vs Armored",
+      "codename":"power_vs_armoured",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Berserkers",
+      "name":"Power vs Berserkers",
+      "codename":"power_vs_frenzy",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Monsters",
+      "name":"Power vs Monsters",
+      "codename":"power_vs_large",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
@@ -2049,43 +2089,50 @@
 	],
 	"necklace_properties": [
 		{
-			"name":"Stamina",
+      "name":"Stamina",
+      "codename":"stamina",
 			"min_value":"1",
 			"max_value":"2",
 			"step":"1"
 		},
 		{
-			"name":"Block Cost Reduction",
+      "name":"Block Cost Reduction",
+      "codename":"block_cost",
 			"min_value":"10",
 			"max_value":"30",
 			"step":"2"
 		},
 		{
-			"name":"Health",
+      "name":"Health",
+      "codename":"health",
 			"min_value":"10",
 			"max_value":"20",
 			"step":"1"
 		},
 		{
-			"name":"Push/Block Angle",
+      "name":"Push/Block Angle",
+      "codename":"push_block_arc",
 			"min_value":"10",
 			"max_value":"30",
 			"step":"2"
 		},
 		{
-			"name":"Damage reduction vs Skaven",
+      "name":"Damage reduction vs Skaven",
+      "codename":"protection_skaven",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Damage reduction vs Chaos",
+      "name":"Damage reduction vs Chaos",
+      "codename":"protection_chaos",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Damage reduction vs Area",
+      "name":"Damage reduction vs Area",
+      "codename":"protection_aoe",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
@@ -2094,49 +2141,57 @@
 	"charm_properties": [
 	
 		{
-			"name":"Attack Speed",
+      "name":"Attack Speed",
+      "codename":"attack_speed",
 			"min_value":"3",
 			"max_value":"5",
 			"step":"0.2"
 		},
 		{
-			"name":"Crit Power",
+      "name":"Crit Power",
+      "codename":"crit_boost",
 			"min_value":"10",
 			"max_value":"20",
 			"step":"1"
 		},
 		{
-			"name":"Power vs Skaven",
+      "name":"Power vs Skaven",
+      "codename":"power_vs_skaven",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Chaos",
+      "name":"Power vs Chaos",
+      "codename":"power_vs_chaos",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Infantry",
+      "name":"Power vs Infantry",
+      "codename":"power_vs_unarmoured",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Armored",
+      "name":"Power vs Armored",
+      "codename":"power_vs_armoured",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Berserkers",
+      "name":"Power vs Berserkers",
+      "codename":"power_vs_frenzy",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Power vs Monsters",
+      "name":"Power vs Monsters",
+      "codename":"power_vs_large",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
@@ -2144,43 +2199,50 @@
 	],
 	"trinket_properties": [
 		{
-			"name":"Cooldown Reduction",
+      "name":"Cooldown Reduction",
+      "codename":"ability_cooldown_reduction",
 			"min_value":"5",
 			"max_value":"10",
 			"step":"0.5"
 		},
 		{
-			"name":"Crit Chance",
+      "name":"Crit Chance",
+      "codename":"crit_chance",
 			"min_value":"3",
 			"max_value":"5",
 			"step":"0.2"
 		},
 		{
-			"name":"Curse Resistance",
+      "name":"Curse Resistance",
+      "codename":"curse_resistance",
 			"min_value":"11",
 			"max_value":"33",
 			"step":"0.2"
 		},
 		{
-			"name":"Movement Speed",
+      "name":"Movement Speed",
+      "codename":"movespeed",
 			"min_value":"5",
 			"max_value":"5",
 			"step":"0"
 		},
 		{
-			"name":"Respawn Speed",
+      "name":"Respawn Speed",
+      "codename":"respawn_speed",
 			"min_value":"10",
 			"max_value":"30",
 			"step":"2"
 		},
 		{
-			"name":"Revive Speed",
+      "name":"Revive Speed",
+      "codename":"revive_speed",
 			"min_value":"10",
 			"max_value":"30",
 			"step":"2"
 		},
 		{
-			"name":"Stamina Recovery Rate",
+      "name":"Stamina Recovery Rate",
+      "codename":"fatigue_regen",
 			"min_value":"10",
 			"max_value":"30",
 			"step":"2"
@@ -2188,117 +2250,143 @@
 	],
 	"melee_traits": [
 		{
-			"name":"Heroic Intervention",
+      "name":"Heroic Intervention",
+      "codename":"melee_shield_on_assist",
 			"description":"Assisting an ally under attack restores 15 temporary health for both players"
 		},
 		{
-			"name":"Off Balance",
+      "name":"Off Balance",
+      "codename":"melee_increase_damage_on_block",
 			"description":"Blocking an attack increases the amount of damage the attacker takes by 20% for 3 seconds"
 		},
 		{
-			"name":"Opportunist",
+      "name":"Opportunist",
+      "codename":"melee_counter_push_power",
 			"description":"Increases push strength by 50% against an attacking enemy"
 		},
 		{
-			"name":"Parry",
+      "name":"Parry",
+      "codename":"melee_timed_block_cost",
 			"description":"Timed blocks reduce stamina cost by 100%"
 		},
 		{
-			"name":"Resourceful Combatant",
+      "name":"Resourceful Combatant",
+      "codename":"melee_reduce_cooldown_on_crit",
 			"description":"Melee critical strikes reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds"
 		},
 		{
-			"name":"Swift Slaying",
+      "name":"Swift Slaying",
+      "codename":"melee_attack_speed_on_crit",
 			"description":"Critical melee strikes increase attack speed by 20% for 5 seconds"
 		}
 	],
 	"range_traits": [
 		{
-			"name":"Barrage",
+      "name":"Barrage",
+      "codename":"ranged_consecutive_hits_increase_power",
 			"description":"Consecutive attacks against the same target boosts attack power by 5% for 5 seconds"
 		},
 		{
-			"name":"Conservative Shooter",
+      "name":"Conservative Shooter",
+      "codename":"ranged_replenish_ammo_headshot",
 			"description":"Headshots replenish 1 ammo"
 		},
 		{
-			"name":"Heat Sink",
+      "name":"Heat Sink",
+      "codename":"ranged_remove_overcharge_on_crit",
 			"description":"Critical hits refund the overcharge cost of the attack",
 			"heat":"yes"
 		},
 		{
-			"name":"Hunter",
+      "name":"Hunter",
+      "codename":"ranged_increase_power_level_vs_armour_crit",
 			"description":"Critical hits increase attack power by 25% against targets with the same armor class for a short time"
 		},
 		{
-			"name":"Inspirational Shot",
+      "name":"Inspirational Shot",
+      "codename":"ranged_restore_stamina_headshot",
 			"description":"Headshots restore stamina to nearby allies"
 		},
 		{
-			"name":"Resourceful Sharpshooter",
+      "name":"Resourceful Sharpshooter",
+      "codename":"ranged_reduce_cooldown_on_crit",
 			"description":"Ranged critical hits reduces the cooldown of your Career Skill by 5%. Triggers once every 4 seconds"
 		},
 		{
-			"name":"Scrounger",
+      "name":"Scrounger",
+      "codename":"ranged_replenish_ammo_on_crit",
 			"description":"Critical hits restore 5% of maximum ammo. Triggers once per shot"
 		},
 		{
-			"name":"Thermal Equalizer",
+      "name":"Thermal Equalizer",
+      "codename":"ranged_reduced_overcharge",
 			"description":"Weapon generates 20% less heat",
 			"heat":"yes"
 		}
 	],
 	"necklace_traits": [
 		{
-			"name":"Barkskin",
+      "name":"Barkskin",
+      "codename":"necklace_damage_taken_reduction_on_heal",
 			"description":"Taking damage reduces the damage you take from subsequent hits by 40% for 2 seconds. Triggers once every 2 seconds"
 		},
 		{
-			"name":"Hand of Shallya",
+      "name":"Hand of Shallya",
+      "codename":"necklace_heal_self_on_heal_other",
 			"description":"Healing an ally with a medpack also heals you for 50% of your missing health"
 		},
 		{
-			"name":"Healer's Touch",
+      "name":"Healer's Touch",
+      "codename":"necklace_not_consume_healing",
 			"description":"25% chance to not consume healing item on use"
 		},
 		{
-			"name":"Natural Bond",
+      "name":"Natural Bond",
+      "codename":"necklace_no_healing_health_regen",
 			"description":"Passively regenerates 1 health every 5 seconds. Health from healing items is converted into temporary health."
 		},
 		{
-			"name":"Shallya's Boon",
+      "name":"Shallya's Boon",
+      "codename":"necklace_increased_healing_received",
 			"description":"Increases effect of healing on you by 30%"
 		}
 	],
 	"charm_traits": [
 		{
-			"name":"Concoction",
+      "name":"Concoction",
+      "codename":"ring_all_potions",
 			"description":"Drinking a potion grants the benefits of all possible potions (effects only last half as long)"
 		},
 		{
-			"name":"Decanter",
+      "name":"Decanter",
+      "codename":"ring_potion_duration",
 			"description":"Increases the duration of potion effects by 50%"
 		},
 		{
-			"name":"Home Brewer",
+      "name":"Home Brewer",
+      "codename":"ring_not_consume_potion",
 			"description":"Grants base 25% chance to not consume potion when drinking"
 		},
 		{
-			"name":"Proxy",
+      "name":"Proxy",
+      "codename":"ring_potion_spread",
 			"description":"Consuming a potion spread the effect to the nearest ally"
 		}
 	],
 	"trinket_traits": [
 		{
-			"name":"Explosive Ordnance",
+      "name":"Explosive Ordnance",
+      "codename":"trinket_increase_grenade_radius",
 			"description":"Increases explosion radius by 50%"
 		},
 		{
-			"name":"Grenadier",
+      "name":"Grenadier",
+      "codename":"trinket_not_consume_grenade",
 			"description":"25% chance to not consume a used bomb"
 		},
 		{
-			"name":"Shrapnel",
+      "name":"Shrapnel",
+      "codename":"trinket_grenade_damage_taken",
 			"description":"Grenades cause hit enemies to take 20% increased damage for 10 seconds"
 		}
 	]
