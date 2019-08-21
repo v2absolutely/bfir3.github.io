@@ -1826,6 +1826,36 @@
 			],
 			"attackPatterns": [],
 			"class": ["Slayer"]
+    },
+    {
+			"name":"Throwing Axes",
+			"codename": "dr_1h_throwing_axes",
+			"templateName": "",
+			"class": ["Slayer"]
+    },
+    {
+			"name":"Spear",
+			"codename": "es_2h_heavy_spear",
+			"templateName": "",
+			"class": ["Mercenary", "Huntsman"]
+    },
+    {
+			"name":"Spear and Shield",
+			"codename": "we_1h_spears_shield",
+			"templateName": "",
+			"class": ["Handmaiden"]
+    },
+    {
+			"name":"Billhook",
+			"codename": "wh_2h_billhook",
+			"templateName": "",
+			"class": ["Witch Hunter Captain", "Bounty Hunter", "Zealot"]
+    },
+    {
+			"name":"Flaming Flail",
+			"codename": "bw_1h_flail_flaming",
+			"templateName": "",
+			"class": ["Battle Wizard", "Pyromancer", "Unchained"]
 		},
 		{
 			"name":"Dual Hammers",
@@ -2045,6 +2075,12 @@
 		}
 	],
 	"range_weapons": [
+    {
+			"name":"Throwing Axes",
+			"codename": "",
+			"templateName": "",
+			"class": ["Ranger Veteran", "Slayer"]
+		},
 		{
       "name":"Handgun",
       "codename":"dr_handgun",
