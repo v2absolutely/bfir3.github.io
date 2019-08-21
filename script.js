@@ -544,7 +544,7 @@ function loadTalents(serializedString) {
 	$(".talentSection>div>div").removeClass('selected');
 	$(".talentSection>div>div").removeClass('redBorder');
 	
-	for (let i = 0; i < 5; i++) {
+	for (let i = 0; i < 6; i++) {
 		if (serializedString[i] > 2) {
 			continue;
 		}
