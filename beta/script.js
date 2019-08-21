@@ -479,7 +479,7 @@ function loadSerializedGear(gearName, serializedString) {
 function loadTalents(serializedString) {
 	$(".talentSection>div>div").removeClass('selected');
 	$(".talentSection>div>div").removeClass('redBorder');
-	
+	debugger;
 	for (let i = 0; i < 5; i++) {
 		if (serializedString[i] > 2) {
 			continue;
@@ -660,6 +660,7 @@ function getCareerIndex() {
 }
 
 function initData(isNewBuild) {
+	debugger;
 	let i = 0;
 	
 	for (let meleeTrait of _data.melee_traits) {

@@ -51,8 +51,8 @@
         "talents":[
           [
             {
-              "name":"Ready for Action",
-              "description":"Increases stamina regeneration by 30%.",
+              "name":"Drillmaster",
+              "description":"",
 			  "modifiers": [
 				  {
 					"name":"Stamina regeneration",
@@ -61,8 +61,8 @@
 			  ]
             },
             {
-              "name":"And Stay Down!",
-              "description":"Increases critical hit chance by 5%.",
+              "name":"Mercenary's Pride",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Critical Chance",
@@ -71,8 +71,8 @@
 			  ]
             },
             {
-              "name":"Battle Scars",
-              "description":"Increases healing effects by 30%.",
+              "name":"Captain's Command",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Healing Effects",
@@ -84,7 +84,7 @@
           [
             {
               "name":"The More The Merrier!",
-              "description":"Increases Power by 3% for every nearby enemy and stacks up to 5 times.",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Power",
@@ -95,8 +95,8 @@
 			  ]
             },
             {
-              "name":"Desperate Defiance",
-              "description":"Reduces damage taken by 35% when below 50% health.",
+              "name":"Limb-Splitter",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Damage Taken Reduction",
@@ -106,8 +106,8 @@
 			  ]
             },
             {
-              "name":"Shrug it Off",
-              "description":"Reduces the attack interruption time when taking damage by 35%.",
+              "name":"Helborg's Tutelage",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Attack Interruption Reduction",
@@ -118,8 +118,8 @@
           ],
           [
             {
-              "name":"Reikland Reaper",
-              "description":"Increases Power by 15% when Paced Strikes is active.",
+              "name":"Mainstay",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Power",
@@ -129,8 +129,8 @@
 			  ]
             },
             {
-              "name":"Blade Barrier",
-              "description":"Reduces damage taken by 25% when Paced Strikes is active.",
+              "name":"Smiter",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Damage Taken Reduction",
@@ -140,8 +140,8 @@
 			  ]
             },
             {
-              "name":"Strike Together",
-              "description":"Paced Strikes spreads to nearby allies.",
+              "name":"Enhanced Power",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Passive Share",
@@ -153,8 +153,8 @@
           ],
           [
             {
-              "name":"Drillmaster",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies.",
+              "name":"Reikland Reaper",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Temporary Health",
@@ -163,8 +163,8 @@
 			  ]
             },
             {
-              "name":"Mercenary's Pride",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain.",
+              "name":"Enhanced Training",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Temporary Health",
@@ -173,8 +173,8 @@
 			  ]
             },
             {
-              "name":"Captain's Command",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds.",
+              "name":"Strike Together",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Health Gain",
@@ -185,8 +185,8 @@
           ],
           [
             {
-              "name":"Gabbler",
-              "description":"Reduces the cooldown of Morale Boost by 30%.",
+              "name":"Stand Clear",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Cooldown Reduction",
@@ -195,8 +195,34 @@
 			  ]
             },
             {
-              "name":"Inspirational",
-              "description":"Increases the temporary health gained from Morale Boost to 45.",
+              "name":"Blade Barrier",
+              "description":"",
+			  "modifiers": [
+				  {
+				    "name":"Health Gain",
+				    "condition":"Bosses die"
+				  }
+			  ]
+            },
+            {
+              "name":"Black Market Supplies",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Walk it Off",
+              "description":"",
+			  "modifiers": [
+				  {
+				    "name":"Cooldown Reduction",
+				    "value":"30%"
+				  }
+			  ]
+            },
+            {
+              "name":"Ready for Action",
+              "description":"",
 			  "modifiers": [
 				  {
 				    "name":"Health Gain",
@@ -206,7 +232,7 @@
             },
             {
               "name":"On Yer Feet, Mates!",
-              "description":"Morale Boost also revives knocked down allies."
+              "description":""
             }
           ]
         ]
@@ -241,72 +267,86 @@
         "talents":[
           [
             {
-              "name":"Keep 'Em Coming",
-              "description":"Increases reload speed by 20%."
-            },
-            {
-              "name":"On Target",
-              "description":"Reduces ranged weapon spread by 25%."
-            },
-            {
-              "name":"Ourdoorsman",
-              "description":"Grants an extra Stamina shield."
-            }
-          ],
-          [
-            {
-              "name":"Scavenger",
-              "description":"When Bosses are killed, Markus gains 100% of his maximum ammo."
-            },
-            {
-              "name":"Make 'Em Bleed",
-              "description":"Critical hits cause enemies to 20% increased damage for a short time. Does not stack with similar effects."
-            },
-            {
-              "name":"Hands Off!",
-              "description":"Enemies that grab or pounce Markus take double damage."
-            }
-          ],
-          [
-            {
-              "name":"Taal's Blessing",
-              "description":"Markus recovers 2 ammunition from headshots."
-            },
-            {
-              "name":"Makin' It Look Easy",
-              "description":"After scoring a ranged headshot Markus gains 25% increased critical hit chance."
-            },
-            {
-              "name":"Thrill of the Hunt",
-              "description":"Ranged headshots Increase reload speed by 20% for 5 seconds."
-            }
-          ],
-          [
-            {
               "name":"Taste of Victory",
-              "description":"Staggering enemies with a melee attack grants temporary health. Health gained based on stagger strength."
+              "description":""
             },
             {
               "name":"Huntsman's Tally",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "description":""
             },
             {
               "name":"Taal's Bounty",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Maim",
+              "description":""
+            },
+            {
+              "name":"Make 'Em Bleed",
+              "description":""
+            },
+            {
+              "name":"One in the Eye",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Bulwark",
+              "description":""
+            },
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Thrill of the Hunt",
+              "description":""
+            },
+            {
+              "name":"Makin' It Look Easy",
+              "description":""
+            },
+            {
+              "name":"Burst of Enthusiasm",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Shot Crafter",
+              "description":""
+            },
+            {
+              "name":"Master Huntsman",
+              "description":""
+            },
+            {
+              "name":"Longshanks",
+              "description":""
             }
           ],
           [
             {
               "name":"Blend In",
-              "description":"Reduces the cooldown of Hunter's Prowl by 30%."
+              "description":""
             },
             {
-              "name":"Hunter's Respite",
-              "description":"Markus recovers 4 health every second while under the effect of Hunter's Prowl."
+              "name":"Concealed Strikes",
+              "description":""
             },
             {
-              "name":"I'm Coming for Ya",
-              "description":"Markus gains a 20% power increase during Hunter's Prowl."
+              "name":"Head Down and Hidden",
+              "description":""
             }
           ]
         ]
@@ -337,72 +377,86 @@
         "talents":[
           [
             {
-              "name":"Bulwark",
-              "description":"Increases effective block and push angle by 50%."
-            },
-            {
-              "name":"Bastion of the Reik",
-              "description":"Increases maximum Health by 25%."
-            },
-            {
-              "name":"Onslaught",
-              "description":"Increases attack speed by 5%."
-            }
-          ],
-          [
-            {
-              "name":"Regroup",
-              "description":"Reviving party members grant them 50% damage reduction for 10 seconds."
-            },
-            {
-              "name":"Counter-Attack",
-              "description":"Gain uninterruptible attacks for 5 seconds after block is broken."
-            },
-            {
-              "name":"Build Momentum",
-              "description":"Successful charged attacks grant 40% increased stamina regeneration for 2 seconds."
-            }
-          ],
-          [
-            {
-              "name":"Battle Dril",
-              "description":"Protective Presence also grants one stamina shield."
-            },
-            {
-              "name":"Defensive Formation",
-              "description":"Increases damage reduction from Protective Presence by 5%."
-            },
-            {
-              "name":"Drillmaster",
-              "description":"Protective Presence also increases movement speed by 5%."
-            }
-          ],
-          [
-            {
               "name":"Back Off, Ugly!",
-              "description":"Staggering enemies with a melee attack grants temporary health. Health gained based on stagger strength."
+              "description":""
             },
             {
               "name":"Bloody Unstoppable!",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "description":""
             },
             {
               "name":"Templar's Rally",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
             }
           ],
           [
             {
-              "name":"A Life of Battle.",
-              "description":"Reduces the cooldown of Valiant Charge by 30%."
+              "name":"Staggering Force",
+              "description":""
             },
             {
-              "name":"Glory Hound",
-              "description":"Valiant Charge also grants 25% power for 10 seconds."
+              "name":"Have at Thee!",
+              "description":""
             },
             {
-              "name":"Hold Ground",
-              "description":"Valiant Charge grants a 100% reduction to stamina block cost for 10 seconds. "
+              "name":"Crowd Clearer",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Bulwark",
+              "description":""
+            },
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Rock of the Reikland",
+              "description":""
+            },
+            {
+              "name":"Defensive Formation",
+              "description":""
+            },
+            {
+              "name":"Taal's Champion",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"It's Hero Time",
+              "description":""
+            },
+            {
+              "name":"Counter-Punch",
+              "description":""
+            },
+            {
+              "name":"That's Bloody Teamwork!",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Numb to Pain",
+              "description":""
+            },
+            {
+              "name":"Trample",
+              "description":""
+            },
+            {
+              "name":"Bull of Ostland!",
+              "description":""
             }
           ]
         ]
@@ -442,72 +496,86 @@
         "talents":[
           [
             {
-              "name":"Hunter's Eye",
-              "description":"Reduces Ranged Spread by 25%."
+              "name":"Roots Running Deep",
+              "description":""
             },
             {
-              "name":"Apply Pressure",
-              "description":"Increases effect of healing by 30%."
+              "name":"Ranger Reaper",
+              "description":""
             },
             {
-              "name":"Foe-Feller",
-              "description":"Increases attack speed by 5%."
+              "name":"Hardy Heart",
+              "description":""
             }
           ],
           [
             {
               "name":"Last Resort",
-              "description":"Bardin gains a 25% Power increase when out of ammunition."
+              "description":""
             },
             {
-              "name":"No Dawdling!",
-              "description":"Increases movement speed by 5%."
+              "name":"Master of Improvisation",
+              "description":""
             },
             {
-              "name":"Curl Up",
-              "description":"While grabbed or pounced all damage taken is reduced by 50%."
+              "name":"Foe-Feller",
+              "description":""
             }
           ],
           [
             {
-              "name":"Battle-Brew",
-              "description":"Survivalist grants a Grenade instead of ammunition on in four."
+              "name":"Bulwark",
+              "description":""
+            },
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Share and Share Alike",
+              "description":""
             },
             {
               "name":"Grungni's Cunning",
-              "description":"Increases ammunition restored by Survivalist caches to 30%"
+              "description":""
             },
             {
-              "name":"Master Brewer",
-              "description":"Survivalist grants a potion instead of ammunition one in three."
+              "name":"Scavenger",
+              "description":""
             }
           ],
           [
             {
-              "name":"Roots Running Deep",
-              "description":"Staggering enemies with a melee attack grants temporary health. Health gained based on stagger strength."
+              "name":"No Dawdling",
+              "description":""
             },
             {
-              "name":"Ranger Reaper",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "name":"Exuberance",
+              "description":""
             },
             {
-              "name":"Hardy Heart",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "name":"Firing Fury",
+              "description":""
             }
           ],
           [
             {
               "name":"Ranger's Ambush",
-              "description":"Leaving the area of the smoke bomb does not break invisibility."
+              "description":""
             },
             {
-              "name":"Preparation",
-              "description":"Reduces the cooldown of Disengage by 30%."
+              "name":"Surprise Guest",
+              "description":""
             },
             {
-              "name":"Catch a Breath",
-              "description":"Bardin recovers 50 temporary health when Disengage is activated."
+              "name":"Ranger's Parting Gift",
+              "description":""
             }
           ]
         ]
@@ -542,72 +610,86 @@
         "talents":[
           [
             {
-              "name":"Shield of Valaya",
-              "description":"Increases effective block and push angle by 50%."
+              "name":"Rock-Breaker",
+              "description":""
             },
             {
-              "name":"Stoutfellow",
-              "description":"Increases Maximum health by 20%."
+              "name":"Grudge-Borne",
+              "description":""
             },
             {
-              "name":"Indefatigable",
-              "description":"Grants an extra stamina shield."
+              "name":"Hearthguard",
+              "description":""
             }
           ],
           [
             {
-              "name":"Gazul's Duty",
-              "description":"Reviving an ally reduces their damage taken by 50% for 10 seconds."
+              "name":"Drakki Wrath",
+              "description":""
             },
             {
-              "name":"Irondrake",
-              "description":"Reduces the overheat generated by Drakefire weapons by 30%."
+              "name":"Blood of Grimnir",
+              "description":""
             },
             {
-              "name":"Miner's Rhythm",
-              "description":"After landing a charged attack, Bardin recovers stamina 40% faster for 2 seconds."
+              "name":"Crushing Counter-Blow",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Bulwark",
+              "description":""
+            },
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
             }
           ],
           [
             {
               "name":"Ironbreaker's Resolve",
-              "description":"Increases Stamina regen by 50% when Gromril Armour is active."
+              "description":""
             },
             {
-              "name":"Rune-Forged",
-              "description":"Bardin receives 10 temporary health whenever Gromril Armour absorbs a hit."
+              "name":"Gromril Curse",
+              "description":""
             },
             {
               "name":"Tunnel Fighter",
-              "description":"Reduces the cooldown of Gromril Armour to 13 seconds."
+              "description":""
             }
           ],
           [
             {
-              "name":"Rock-Breaker",
-              "description":"Staggering enemies with a melee attack grants temporary health. Health gained based on stagger strength."
+              "name":"Dawi Defiance",
+              "description":""
             },
             {
-              "name":"Grudge-Borne",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "name":"The Rolling Mountain",
+              "description":""
             },
             {
-              "name":"Hearthguard",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "name":"Miner's Rhythm",
+              "description":""
             }
           ],
           [
             {
-              "name":"Heart of Gromril",
-              "description":"Increases the Duration of Impenetrable to 15 seconds."
-            },
-            {
-              "name":"Booming Taunt",
-              "description":"Impenetrable taunt radius increased by 50%."
+              "name":"Drengbarazi Oath",
+              "description":""
             },
             {
               "name":"Oi! Wazzok!",
-              "description":"Impenetrable taunt now forces bosses to attack Bardin."
+              "description":""
+            },
+            {
+              "name":"Booming Taunt",
+              "description":""
             }
           ]
         ]
@@ -634,72 +716,86 @@
         "talents":[
           [
             {
-              "name":"Stoutfellow",
-              "description":"Increases health by 25%."
+              "name":"Doomseeker",
+              "description":""
+            },
+            {
+              "name":"Slayer's Fury",
+              "description":""
+            },
+            {
+              "name":"Infectious Fortitude",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"A Thousand Cuts",
+              "description":""
+            },
+            {
+              "name":"Skull-Splitter",
+              "description":""
             },
             {
               "name":"Hack and Slash",
-              "description":"Increases critical hit chance by 5%."
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Smiter",
+              "description":""
             },
             {
-              "name":"See it Coming",
-              "description":"Increases Dodge Range by 20%."
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Impatience",
+              "description":""
+            },
+            {
+              "name":"High Tally",
+              "description":""
+            },
+            {
+              "name":"Adrenaline Surge",
+              "description":""
             }
           ],
           [
             {
               "name":"Oblivious to Pain",
-              "description":"Damage taken from one attack is reduced to 10 damage or half of its original value - whichever is highest."
+              "description":""
             },
             {
-              "name":"Stunty Saviour",
-              "description":"Increases movement speed by 15% when Bardin is the last hero standing."
+              "name":"Grimnir's Focus",
+              "description":""
             },
             {
-              "name":"Crippling Wounds",
-              "description":"Critical hits cause enemies to take 20% increased damage for a short duration. Does not stack with similar effects."
+              "name":"Barge",
+              "description":""
             }
           ],
           [
             {
-              "name":"Unstoppable!",
-              "description":"Increases the duration of the buffs gained from Trophy Hunter to 5 seconds."
+              "name":"Bounding Leap",
+              "description":""
             },
             {
-              "name":"Moving Target",
-              "description":"Trophy Hunter also reduces damage taken by 10% for each stack."
-            },
-            {
-              "name":"Adrenaline Surge",
-              "description":"On max stacks, Trophy Hunter grants cooldown reduction for Leap."
-            }
-          ],
-          [
-            {
-              "name":"Doomseeker",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
-            },
-            {
-              "name":"Slayer's Fury",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
-            },
-            {
-              "name":"Infectious Fortitude",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
-            }
-          ],
-          [
-            {
-              "name":"Crunch!",
-              "description":"Increases the stagger effect when landing near enemies with Leap by 100%"
-            },
-            {
-              "name":"Unstoppable",
-              "description":"Leap's attack speed buff also grants Uninterruptible attacks for the duration."
+              "name":"Dawi-Drop",
+              "description":""
             },
             {
               "name":"No Escape",
-              "description":"Leap's attack speed buff also increases movement speed by 25% for the duration."
+              "description":""
             }
           ]
         ]
@@ -739,72 +835,86 @@
         "talents":[
           [
             {
-              "name":"Fury of Anath Raema",
-              "description":"Increases attack speed by 5%."
+              "name":"Weavebound",
+              "description":""
             },
             {
-              "name":"Morai-Heg's Scorn",
-              "description":"Increases critical hit chance by 5%."
+              "name":"Dryad's Thirst",
+              "description":""
             },
             {
-              "name":"Hukon's Tenacity",
-              "description":"Increases stamina regeneration by 30%."
+              "name":"Ariel's Boon",
+              "description":""
             }
           ],
           [
             {
-              "name":"Ironfeather Flights",
-              "description":"Returns 100% ammunition on monster death."
+              "name":"Blood Shot",
+              "description":""
             },
             {
-              "name":"Daughter of the Hunt",
-              "description":"While above 45% health, Kerillian's critical hits gain 30% additional power boost."
+              "name":"Serrated Shots",
+              "description":""
             },
             {
-              "name":"Arcane Bodkins",
-              "description":"Increases headshot damage multiplier by 50%"
+              "name":"Drakira's Alacrity",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Assassin",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
             }
           ],
           [
             {
               "name":"Isha's Embrace",
-              "description":"Increases health regenerated by Amaranthe by 50%"
+              "description":""
             },
             {
-              "name":"Vaul's Quiver",
-              "description":"Amaranthe also recovers arrows each time it restores health"
+              "name":"Spirit Arrows",
+              "description":""
             },
             {
               "name":"Rejuvenating Locus",
-              "description":"Amaranthe also affects members of the party."
+              "description":""
             }
           ],
           [
             {
-              "name":"Weavebond",
-              "description":"Melee critical strikes and headshots restore 2 temporary health. Critical headshots restore twice as much."
+              "name":"Fervent Huntress",
+              "description":""
             },
             {
-              "name":"Dryad's Thirst",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "name":"Ricochet",
+              "description":""
             },
-            {
-              "name":"Ariel's Boon",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
-            }
-          ],
-          [
             {
               "name":"Asrai Focus",
-              "description":"Reduces the cooldown of Trueshot Volley by 30%."
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Piercing Shot",
+              "description":""
             },
             {
-              "name":"Lifebloom Arrows",
-              "description":"Using Trueshot Volley recovers 50 temporary health."
+              "name":"Loaded Bow",
+              "description":""
             },
             {
-              "name":"Kurnous' Blessing",
-              "description":"Using Trueshot recovers 20% of Kerillian's maximum ammunition."
+              "name":"Kurnous' Reward",
+              "description":""
             }
           ]
         ]
@@ -835,72 +945,86 @@
         "talents":[
           [
             {
-              "name":"Asrai Vigor",
-              "description":"Grants an extra Stamina shield."
-            },
-            {
-              "name":"Wraithwillow Stance",
-              "description":"Increases area for effective blocks and pushes by 50%."
-            },
-            {
-              "name":"Quiver of Plenty",
-              "description":"Increases ammunition amount by 40%. "
-            }
-          ],
-          [
-            {
-              "name":"Triumph of the Cadai",
-              "description":"Clears any wounds and converts any temporary health to permanent health when monsters die."
-            },
-            {
-              "name":"Eldrazor's Precision",
-              "description":"Increases Power Level by 15% but reduces attack speed by 5%."
-            },
-            {
-              "name":"Defiance",
-              "description":"Reduce damage taken by 50% when Kerillian is the last hero standing."
-            }
-          ],
-          [
-            {
-              "name":"Gladerunner",
-              "description":"Increases movement speed by 5%."
-            },
-            {
-              "name":"Shadowstep",
-              "description":"Further increases dodge distance by 20%."
-            },
-            {
-              "name":"Hukon's Tenacity",
-              "description":"Increases stamina regeneration speed by an additional 50%."
-            }
-          ],
-          [
-            {
               "name":"Spirit Echo",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "description":""
             },
             {
               "name":"Martial Blessing",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "description":""
             },
             {
               "name":"Eternal Blossom",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Focused Spirit",
+              "description":""
+            },
+            {
+              "name":"Oak Stance",
+              "description":""
+            },
+            {
+              "name":"Asraie Grace",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Willow Stance",
+              "description":""
+            },
+            {
+              "name":"Shadowstep",
+              "description":""
+            },
+            {
+              "name":"Wraith-Walk",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Heart of Oak",
+              "description":""
+            },
+            {
+              "name":"Birch Stance",
+              "description":""
+            },
+            {
+              "name":"Quiver of Plenty",
+              "description":""
             }
           ],
           [
             {
               "name":"Gift of Ladrielle",
-              "description":"Kerillian disappears from enemy perception for 3 seconds after using Dash."
+              "description":""
             },
             {
               "name":"Bladedancer",
-              "description":"Increases damage of the bleed effect when Dashing through enemies."
+              "description":""
             },
             {
-              "name":"Handmaiden's Grace",
-              "description":"Reduces the cooldown of Dash by 30%"
+              "name":"Power from Pain",
+              "description":""
             }
           ]
         ]
@@ -927,72 +1051,86 @@
         "talents":[
           [
             {
-              "name":"Hukon's Tenacity",
-              "description":"Increases stamina regeneration by 30%."
+              "name":"Bleak Vigour",
+              "description":""
             },
             {
-              "name":"Fury of Anath Raema",
-              "description":"Increases attack speed by 5%."
+              "name":"Khaine's Thirst",
+              "description":""
             },
             {
-              "name":"Shadowstep",
-              "description":"Increases dodge range by 20%."
+              "name":"Blood Kin",
+              "description":""
             }
           ],
           [
             {
-              "name":"Gladerunner",
-              "description":"Increases movement speed by 5%."
+              "name":"Cruelty",
+              "description":""
             },
             {
-              "name":"Ellinill's Venom",
-              "description":"Increases damage taken by enemies disabling Kerillian by 100%."
+              "name":"Exploit Weakness",
+              "description":""
             },
             {
-              "name":"Hekarti's Bounty",
-              "description":"Increases power by 15% when the party holds at least one Grimoire."
+              "name":"Exquisite Huntress",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Assassin",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
             }
           ],
           [
             {
               "name":"Ereth Khial's Herald",
-              "description":"Assassin's Blade is increased to 75% additional damage when attacking enemies from behind."
+              "description":""
             },
             {
-              "name":"Mistress of Sacrifice",
-              "description":"Increased angle for triggering backstabs."
+              "name":"Vanish",
+              "description":""
             },
             {
               "name":"Bloodfletcher",
-              "description":"Backstabs return 1 ammo or bolt."
+              "description":""
             }
           ],
           [
             {
-              "name":"Bleak Vigour",
-              "description":"Melee critical strikes and headshots restore 2 temporary health. Critical headshots restore twice as much."
+              "name":"Blood Drinker",
+              "description":""
             },
             {
-              "name":"Khaine's Thirst",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "name":"Spring-Heeled Assassin",
+              "description":""
             },
             {
-              "name":"Blood Kin",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "name":"Gladerunner",
+              "description":""
             }
           ],
           [
             {
-              "name":"Veilwalker",
-              "description":"Increases duration of Infiltrate to 15 seconds."
+              "name":"Cloak of Mist",
+              "description":""
             },
             {
-              "name":"Shadowhunter",
-              "description":"Infiltrate stealth no longer breaks when firing ranged weapon."
+              "name":"Shadowstep",
+              "description":""
             },
             {
-              "name":"Shadespirit",
-              "description":"Reduces cooldown of Infiltrate by 30%."
+              "name":"Cloak of Pain",
+              "description":""
             }
           ]
         ]
@@ -1032,72 +1170,86 @@
         "talents":[
           [
             {
-              "name":"Charmed Life",
-              "description":"Increase dodge range by 20%."
-            },
-            {
-              "name":"Unflagging Spirit",
-              "description":"Grants an extra stamina shield."
-            },
-            {
-              "name":"Always Prepared",
-              "description":"Increase maximum ammunition by 30%."
-            }
-          ],
-          [
-            {
-              "name":"Abjured Temptation",
-              "description":"Increase power by 15% when the party holds at least one Grimoire."
-            },
-            {
-              "name":"Deathknell",
-              "description":"Increases headshot damage bonus by 50%"
-            },
-            {
-              "name":"Suffer No Heresy",
-              "description":"Reduce the damage taken when disabled by 50%."
-            }
-          ],
-          [
-            {
-              "name":"Marked for Death",
-              "description":"Witch-Hunt grants 5% increased attack speed to the party for 5 seconds when taggable enemies die."
-            },
-            {
-              "name":"Justice's Bounty",
-              "description":"Witch-Hunt recovers 3 temporary health for the party when taggable enemies die."
-            },
-            {
-              "name":"Wild Fervour",
-              "description":"Witch-Hunt grants 5% increased critical hit chance to the entire party for 5 seconds when taggable enemies die."
-            }
-          ],
-          [
-            {
               "name":"Hunter's Ardour",
-              "description":"Melee critical strikes and headshots restore 2 temporary health. Critical headshots restore twice as much."
+              "description":""
             },
             {
               "name":"Walking Judgement",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "description":""
             },
             {
               "name":"Disciplinarian",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
             }
           ],
           [
             {
-              "name":"Redoubled Purpse",
-              "description":"Reduce the cooldown of animosity by 30%."
+              "name":"Riposte",
+              "description":""
             },
             {
-              "name":"Resonating Faith",
-              "description":"Increases the duration of animosity to 10 seconds."
+              "name":"Deathknell",
+              "description":""
             },
             {
-              "name":"Fierce Oratory",
-              "description":"Increases the radius of animosity by 50%."
+              "name":"Flense",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Assassin",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Templar's Knowledge",
+              "description":""
+            },
+            {
+              "name":"Heretic Sighted",
+              "description":""
+            },
+            {
+              "name":"Wild Fervour",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Charmed Life",
+              "description":""
+            },
+            {
+              "name":"Cast Away",
+              "description":""
+            },
+            {
+              "name":"Always Prepared",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"I Shall Judge You All!",
+              "description":""
+            },
+            {
+              "name":"Fervency",
+              "description":""
+            },
+            {
+              "name":"The Unending Hunt",
+              "description":""
             }
           ]
         ]
@@ -1128,72 +1280,86 @@
         "talents":[
           [
             {
-              "name":"Swift Reload",
-              "description":"Increases reload speed by 20%"
+              "name":"Blood for Money",
+              "description":""
             },
             {
-              "name":"Make Them Count",
-              "description":"Reduces ranged weapon spread by 25%."
+              "name":"Tithetaker",
+              "description":""
             },
             {
-              "name":"Vicious Virtue",
-              "description":"Increases attack speed by 5%."
+              "name":"Paymaster",
+              "description":""
             }
           ],
           [
             {
-              "name":"Leave None Behind",
-              "description":"Increases revive speed by 30%"
+              "name":"Open Wounds",
+              "description":""
             },
             {
               "name":"Necessary Means",
-              "description":"Gain 25% increased Power when out of ammunition"
+              "description":""
             },
             {
-              "name":"Crippling Strike",
-              "description":"Increases the power boost of critical hits by 25%."
+              "name":"Weight of Fire",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Assassin",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
             }
           ],
           [
             {
               "name":"Inspired Shot",
-              "description":"Melee kills reset the cooldown of Blessed Shots."
+              "description":""
             },
             {
               "name":"Cruel Fortune",
-              "description":"Reduces cooldown on Blessed Shots to 6 seconds."
+              "description":""
             },
             {
               "name":"Prize Bounty",
-              "description":"Shots affected by Blessed Shots consume no ammunition."
+              "description":""
             }
           ],
           [
             {
-              "name":"Blood for Money",
-              "description":"Melee critical strikes and headshots restore 2 temporary health. Critical headshots restore twice as much."
+              "name":"Hunter's Pursuit",
+              "description":""
             },
             {
-              "name":"Tithetaker",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "name":"Duty's Gift",
+              "description":""
             },
             {
-              "name":"Paymaster",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "name":"Job Well Done",
+              "description":""
             }
           ],
           [
             {
-              "name":"Encore",
-              "description":"Reduces cooldown of Locked and Loaded by 30%."
+              "name":"Just Reward",
+              "description":""
             },
             {
               "name":"Double-shotted",
-              "description":"Modifies Victor's sidearm to fire two powerful bullets in a straight line."
+              "description":""
             },
             {
               "name":"Buckshot",
-              "description":"Modifies Victor's sidearm to fire two blasts of pellets devastating cone."
+              "description":""
             }
           ]
         ]
@@ -1224,72 +1390,86 @@
         "talents":[
           [
             {
-              "name":"Holy Endurance",
-              "description":"Increases stamina regeneration speed by 30%."
-            },
-            {
-              "name":"Saint of Battle",
-              "description":"Increases critical hit chance by 5%."
-            },
-            {
-              "name":"Strong of Will",
-              "description":"Reduces stun duration by 35%"
-            }
-          ],
-          [
-            {
-              "name":"No Surrender!",
-              "description":"Increases Power by 3% for every nearby enemy and stacks up to 5 times."
-            },
-            {
-              "name":"Flagellant",
-              "description":"Damage taken from one attack is reduced to 10 damage or half its original value - whichever is highest."
-            },
-            {
-              "name":"Suppress Pain",
-              "description":"Reduces damage taken by 35% while below 50% health."
-            }
-          ],
-          [
-            {
-              "name":"Shield of Faith",
-              "description":"Fiery Faith also increases block and push angle by 10% per 25 health missing."
-            },
-            {
-              "name":"Holy Crusader",
-              "description":"Fiery Faith also increases power boost of critical hits by 10 per 25 health missing."
-            },
-            {
-              "name":"Undying Fervour",
-              "description":"Fiery Faith also grants stamina per 25 health missing."
-            }
-          ],
-          [
-            {
               "name":"Sigmar's Herald",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "description":""
             },
             {
-              "name":"REPENT! REPENT!",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "name":"Repent! Repent!",
+              "description":""
             },
             {
               "name":"Font of Zeal",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
             }
           ],
           [
             {
-              "name":"Frother",
-              "description":"Reduces the cooldown of Holy Fervour by 30%."
+              "name":"Castigate",
+              "description":""
             },
             {
-              "name":"Pleasure from Pain",
-              "description":"Holy Fervour causes Victor to restore 2 temporary health for each successful hit."
+              "name":"Smite",
+              "description":""
             },
             {
-              "name":"Blessed Frenzy",
-              "description":"Increases the duration of Holy Fervour's attack speed buff to 8 seconds."
+              "name":"Unbending Purpose",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Crusade",
+              "description":""
+            },
+            {
+              "name":"Holy Fortitude",
+              "description":""
+            },
+            {
+              "name":"Armour of Faith",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Devotion",
+              "description":""
+            },
+            {
+              "name":"Redemption through Blood",
+              "description":""
+            },
+            {
+              "name":"Calloused Without and Within",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Faith's Flurry",
+              "description":""
+            },
+            {
+              "name":"Feel Nothing",
+              "description":""
+            },
+            {
+              "name":"Flagellant's Zeal",
+              "description":""
             }
           ]
         ]
@@ -1325,72 +1505,86 @@
         "talents":[
           [
             {
-              "name":"Cauterise Wounds",
-              "description":"Increases healing recieved by 30%."
-            },
-            {
-              "name":"Fuelled by Fire",
-              "description":"Grants an extra Stamina shield."
-            },
-            {
-              "name":"Voracious Conjuring",
-              "description":"Increases ranged attack charge speed by 15%."
-            }
-          ],
-          [
-            {
-              "name":"World Aflame",
-              "description":"Every nearby enemy increases power by 5%, this effect can stack up to 5 times."
-            },
-            {
-              "name":"Molten Skin",
-              "description":"Reduces damage taken by 50% when Sienna is the last hero standing."
-            },
-            {
-              "name":"Lingering Flames",
-              "description":"Sienna's burning effects now last until the effected enemy dies. Burning effects do not stack."
-            }
-          ],
-          [
-            {
-              "name":"Burning Vigour",
-              "description":"Reduces stamina cost of blocking attacks by 40% when Tranquility is active."
-            },
-            {
-              "name":"Rechannel",
-              "description":"When Tranquility is active, Sienna's ranged charge time is reduced by 40%."
-            },
-            {
-              "name":"Centered",
-              "description":"Increases the venting effect of Tranquility by 100%"
-            }
-          ],
-          [
-            {
-              "name":"Confound ",
-              "description":"Staggering enemies with a melee attack grants temporary health. Health gained based on stagger strength."
+              "name":"Confound",
+              "description":""
             },
             {
               "name":"Spark Thief",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "description":""
             },
             {
               "name":"Flame-Fettled",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
             }
           ],
           [
             {
-              "name":"Volan's Quickening",
-              "description":"Reduces the cooldown of Fire Walk by 30%."
+              "name":"Volcanic Force",
+              "description":""
             },
             {
-              "name":"Lava Walker",
-              "description":"Fire Walk trail lingers for 10 seconds."
+              "name":"Immersive Immolation",
+              "description":""
+            },
+            {
+              "name":"Lingering Flames",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Bulwark",
+              "description":""
+            },
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Unusually Calm",
+              "description":""
+            },
+            {
+              "name":"Rechannel",
+              "description":""
+            },
+            {
+              "name":"Centered",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Soot Shield",
+              "description":""
+            },
+            {
+              "name":"Fires from Ash",
+              "description":""
+            },
+            {
+              "name":"Famished Flames",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Whoosh!",
+              "description":""
+            },
+            {
+              "name":"Kaboom!",
+              "description":""
             },
             {
               "name":"Burnout",
-              "description":"Fire Walk can be activated a second time within 5 seconds."
+              "description":""
             }
           ]
         ]
@@ -1417,72 +1611,86 @@
         "talents":[
           [
             {
-              "name":"Focusing Lens",
-              "description":"Reduced ranged attack spread by 25%."
-            },
-            {
-              "name":"Martial Study",
-              "description":"Increased attack speed by 5%."
-            },
-            {
-              "name":"Natural Talent",
-              "description":"Reduces overcharge generated by 10%."
-            }
-          ],
-          [
-            {
-              "name":"Ashen Form",
-              "description":"Reduces damage taken when disabled by 50%."
-            },
-            {
-              "name":"Dissipate",
-              "description":"Increases overcharge decay speed when affected by a Grimoire by 100%."
-            },
-            {
-              "name":"Quickening",
-              "description":"Increases spell charge speed by 25% while below 50% health."
-            }
-          ],
-          [
-            {
-              "name":"Shield of Tarnus",
-              "description":"Critical Mass also reduces the stamina cost of blocking attacks by 10% per 6 overcharge and stacks up to 5 times."
-            },
-            {
-              "name":"Blazing Equilibrium",
-              "description":"Critical Mass also reduces overcharge generated by 5% per 6 overcharge and stacks up to 5 times."
-            },
-            {
-              "name":"One with the Flame",
-              "description":"Critical Mass also increases attack speed by 2% per 6 overcharge and stacks up to 5 times."
-            }
-          ],
-          [
-            {
               "name":"Spark Smith",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "description":""
             },
             {
               "name":"Spirit-Binding",
-              "description":"Melee killing blows grant temporary health based off the health of the enemy slain."
+              "description":""
             },
             {
               "name":"Fiery Fortitude",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Ride the Fire Wind",
+              "description":""
+            },
+            {
+              "name":"Martial Study",
+              "description":""
+            },
+            {
+              "name":"Spirit-Casting",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Smiter",
+              "description":""
+            },
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Deathly Dissipation",
+              "description":""
+            },
+            {
+              "name":"On the Precipice",
+              "description":""
+            },
+            {
+              "name":"On with the Flame",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Soul Siphon",
+              "description":""
+            },
+            {
+              "name":"The Volans Doctrine",
+              "description":""
+            },
+            {
+              "name":"Fleetflame",
+              "description":""
             }
           ],
           [
             {
               "name":"Exhaust",
-              "description":"The Burning Head also removes all overcharge."
+              "description":""
             },
             {
               "name":"Bonded Flame",
-              "description":"The Burning Head grants 50 temporary health when used."
+              "description":""
             },
             {
-              "name":"Fiery Heart",
-              "description":"Reduces the cooldown of The Burning Head by 30%."
+              "name":"Blazing Echo",
+              "description":""
             }
           ]
         ]
@@ -1513,72 +1721,86 @@
         "talents":[
           [
             {
-              "name":"Backblast",
-              "description":"Increases effective block and push arc by 50%."
-            },
-            {
-              "name":"Form of the Fire Wind",
-              "description":"Increases max overcharge by 25%."
-            },
-            {
-              "name":"Volcanic Body",
-              "description":"Increases maximum health by 20%."
-            }
-          ],
-          [
-            {
-              "name":"Feuerbach's Fury",
-              "description":"Successful charged melee attacks grant 40% increased stamina regeneration for 2 seconds."
-            },
-            {
-              "name":"Essence Syphon",
-              "description":"Clears any wounds and converts temporary health to permanent health when bosses die."
-            },
-            {
-              "name":"Seared Nerves",
-              "description":"Revived allies take 50% less damage for 10 seconds."
-            }
-          ],
-          [
-            {
-              "name":"Dissispate",
-              "description":"Block cost is reduced by 50% when Overcharged and blocking attacks vents Overcharge"
-            },
-            {
-              "name":"Conduit",
-              "description":"Increases rate of venting overcharge by 30% and reduces damage taken from venting by 50%."
-            },
-            {
-              "name":"Natural Talent",
-              "description":"Reduces overcharge generated by 15%."
-            }
-          ],
-          [
-            {
               "name":"Soul Quench",
-              "description":"Staggering enemies with a melee attack grants temporary health. Health gained based on stagger strength."
+              "description":""
             },
             {
               "name":"Reckless Rampage",
-              "description":"Damaging multiple enemies in one swing grants temporary health. Max 5 enemies."
+              "description":""
             },
             {
               "name":"Burn-Bloom",
-              "description":"Healing yourself with health items heals nearby allies for 20% of their maximum health. Clears wounds."
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Frenzied Flame",
+              "description":""
+            },
+            {
+              "name":"Searing Grasp",
+              "description":""
+            },
+            {
+              "name":"Chain Reaction",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Bulwark",
+              "description":""
+            },
+            {
+              "name":"Mainstay",
+              "description":""
+            },
+            {
+              "name":"Enhanced Power",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Dissipate",
+              "description":""
+            },
+            {
+              "name":"Conduit",
+              "description":""
+            },
+            {
+              "name":"Numb to Pain",
+              "description":""
+            }
+          ],
+          [
+            {
+              "name":"Enfeebling Flames",
+              "description":""
+            },
+            {
+              "name":"Burning Dregs",
+              "description":""
+            },
+            {
+              "name":"Natural Talent",
+              "description":""
             }
           ],
           [
             {
               "name":"Flame Wave",
-              "description":"Increases the radius of Living Bomb explosion by 50%."
+              "description":""
             },
             {
-              "name":"Blazing Crescendo",
-              "description":"Increase the explosion damage of Living Bomb."
+              "name":"Fuel for the Fire",
+              "description":""
             },
             {
-              "name":"Tick, Tick, Tick...",
-              "description":"Reduces the cooldown of Living Bomb by 30%."
+              "name":"Bomb Balm",
+              "description":""
             }
           ]
         ]
